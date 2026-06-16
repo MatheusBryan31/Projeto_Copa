@@ -3,8 +3,11 @@ from google.cloud import storage
 from PIL import Image
 from io import BytesIO
 
-client = storage.Client.from_service_account_json(
-    "projeto-copa-matheus-bryan-acb89e2931b9.json"
+import streamlit as st
+from google.cloud import storage
+
+client = storage.Client.from_service_account_info(
+    st.secrets["gcp_service_account"]
 )
 
 bucket_nome = "bryan_copa"
