@@ -3,9 +3,7 @@ from google.cloud import storage
 from PIL import Image
 from io import BytesIO
 
-import streamlit as st
-from google.cloud import storage
-
+# Cliente autenticado via Streamlit Secrets
 client = storage.Client.from_service_account_info(
     st.secrets["gcp_service_account"]
 )
@@ -17,7 +15,6 @@ bucket = client.bucket(bucket_nome)
 blob = bucket.blob(arquivo)
 
 imagem_bytes = blob.download_as_bytes()
-
 imagem = Image.open(BytesIO(imagem_bytes))
 
 st.image(
