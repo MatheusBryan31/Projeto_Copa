@@ -37,14 +37,14 @@ with ab1:
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.image(carregar_imagem("imagens_jogadores/ale_1.jpg"))
+        st.image(carregar_imagem("imagens_jogadores/bra_5.jpg"))
         st.write("Doidão do Brasil")
     with col2:
         st.image(carregar_imagem("imagens_jogadores/bra_3.jpg"))
-        st.write("Mais um do Brasil")
+        st.write("Marcos")
     with col3:
         st.image(carregar_imagem("imagens_jogadores/bra_4.jpg"))
-        st.write("Outro br.")
+        st.write("Tiago Silva")
 # ========================================================================================================
 # ============================================ ALEMANHA ==================================================
 with ab2:
@@ -57,7 +57,7 @@ with ab2:
         st.write("Manuel Noier")
     with col2:
         st.image(carregar_imagem("imagens_jogadores/ale_2.jpg"))
-        st.write("Malução da alemanha")
+        st.write("Kimich")
     with col3:
         st.image(carregar_imagem("imagens_jogadores/ale_4.jpg"))
         st.write("Mais um da alemanha")
